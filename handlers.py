@@ -10,3 +10,7 @@ def sample1_on_create(hashMap,_files=None,_data=None):
     if not hashMap.containsKey("b"):
         hashMap.put("b","")
     return hashMap
+
+def print_barcode(hashMap,_files=None,_data=None):
+    hashMap.put("toast", hashMap.get("barcode"))
+    return hashMap
